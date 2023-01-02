@@ -19,3 +19,7 @@ void solve(vector<string>&ans, int open, int close, string s, int n){
     return ans;
    }
   };
+
+                     f ({)
+            -f({{)               f({})
+       --f({{{)   --f({{})       f({{})     ({}{)
