@@ -24,7 +24,7 @@ public:
         if(nums[i]>0)
          break;
          
-        if(i>0 && nums[i]==nums[i+1])
+        if(i>0 && nums[i]==nums[i-1])
          continue;
          
         int left=i+1, right= n-1;
@@ -37,7 +37,7 @@ public:
           right--;
           
         else{
-        res.push_back(nums[i],nums[left],nums[right]);
+        res.push_back({nums[i],nums[left],nums[right]});
         
         last_left= nums[left], last_right= nums[right];
         
