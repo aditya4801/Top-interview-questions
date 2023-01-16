@@ -1,0 +1,15 @@
+class Solution {
+public:
+    int lengthOfLastWord(string s) {
+     
+     int count=0 , it= s.length()-1;
+     
+     while(it >= 0 && s[it]==' ') it--;  //corner case of having space even after the last word
+     
+     while(it>=0 && s[it]!=' '){
+       it--;
+       count++;
+      }
+      return count;
+     }
+    };
