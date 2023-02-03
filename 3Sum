@@ -29,6 +29,8 @@ public:
          
         int left=i+1, right= n-1;
         
+        while(left<right){
+        
         int sum = nums[i] + nums[left] + nums[right];
         
         if(sum<0)
@@ -41,10 +43,10 @@ public:
         
         last_left= nums[left], last_right= nums[right];
         
-        while(left < right && nums[left]=last_left) left++;
+        while(left < right && nums[left]==last_left) left++;
         while(left < right && nums[right]==last_right) right--;
-        }
-        }
+          }
+         }
         }
         return res;
      }
